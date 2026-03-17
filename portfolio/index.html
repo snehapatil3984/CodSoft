@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sneha Patil | Web Developer</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Playfair Display + DM Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Logo / Name -->
+      <a href="#home" class="nav-logo">Sneha<span>.</span></a>
+
+      <!-- Hamburger menu button (for mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Navigation links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"     class="nav-link">Home</a></li>
+        <li><a href="#about"   class="nav-link">About</a></li>
+        <li><a href="#skills"  class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== HOME SECTION ===================== -->
+  <section class="section" id="home">
+    <div class="home-container">
+      <!-- Avatar / Illustration -->
+      <div class="home-avatar">
+        <div class="avatar-circle">
+          <span class="avatar-initials">SP</span>
+        </div>
+        <div class="avatar-badge">👩‍💻</div>
+      </div>
+
+      <!-- Text Content -->
+      <div class="home-text">
+        
+        <h1 class="home-title">Hi, I'm <span class="highlight">Sneha Patil</span></h1>
+        <h2 class="home-subtitle">Web Developer</h2>
+        <p class="home-description">
+          I build clean, responsive, and user-friendly websites.
+          Passionate about turning ideas into real digital experiences —
+          one line of code at a time.
+        </p>
+        <!-- CTA Buttons -->
+        <div class="home-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact"  class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </div>
+    <!-- Decorative floating shapes -->
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section class="section section-alt" id="about">
+    <div class="container">
+      <h2 class="section-title">About <span class="highlight">Me</span></h2>
+      <p class="section-subtitle">A little bit about who I am</p>
+
+      <!-- Two-column layout: left = avatar + quick info, right = paragraphs -->
+      <div class="about-layout">
+
+        <!-- Left: Avatar + quick facts -->
+        <div class="about-left">
+          <div class="about-avatar-wrap">
+            <div class="about-avatar">
+              <span>SP</span>
+            </div>
+            <div class="about-status">🟢 Available for work</div>
+          </div>
+
+          <!-- Quick info list -->
+          <ul class="about-info-list">
+            <li><span class="info-label">📍 Location</span><span>Pune, Maharashtra</span></li>
+            <li><span class="info-label">🎓 Education</span><span>Bachelor of Computer Application</span></li>
+            <li><span class="info-label">💼 Role</span><span>Web Developer Intern</span></li>
+            <li><span class="info-label">📧 Email</span><span>snehapatil39842@email.com</span></li>
+          </ul>
+
+          
+        </div>
+
+       <div class="about-right">
+
+  <h3 class="about-heading">Hello! I'm <span class="highlight">Sneha Patil</span> 👋</h3>
+
+  <p class="about-para">
+  I'm a passionate <strong>Web Developer</strong> from Pune, Maharashtra. 
+  I enjoy building clean and responsive websites using 
+  <strong>HTML, CSS, and JavaScript</strong>.
+</p>
+
+<p class="about-para">
+  I also have knowledge of <strong>Python</strong> and <strong>MySQL</strong>, 
+  which helps me understand both frontend and basic backend development.
+</p>
+
+<p class="about-para">
+  Currently, I am pursuing my <strong>Web Development Internship at CodSoft</strong>, 
+  where I am working on real-world projects and improving my practical coding skills.
+</p>
+
+<p class="about-para">
+  I enjoy learning new technologies, solving problems, and building 
+  user-friendly web applications. My goal is to grow as a developer 
+  and contribute to meaningful projects.
+</p>
+
+          
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS SECTION ===================== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+      <p class="section-subtitle">Technologies I work with</p>
+
+      <div class="skills-grid">
+
+        <!-- Skill Card: HTML -->
+        <div class="skill-card card">
+          <div class="skill-icon" style="background:#FFF3E0; color:#E65100;">
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <h3 class="skill-name">HTML</h3>
+          <p class="skill-desc">Semantic markup & page structure</p>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 90%; background:#E65100;"></div>
+          </div>
+        </div>
+
+        <!-- Skill Card: CSS -->
+        <div class="skill-card card">
+          <div class="skill-icon" style="background:#E3F2FD; color:#1565C0;">
+            <i class="fa-brands fa-css3-alt"></i>
+          </div>
+          <h3 class="skill-name">CSS</h3>
+          <p class="skill-desc">Responsive layouts & styling</p>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 85%; background:#1565C0;"></div>
+          </div>
+        </div>
+
+        <!-- Skill Card: JavaScript -->
+        <div class="skill-card card">
+          <div class="skill-icon" style="background:#FFFDE7; color:#F9A825;">
+            <i class="fa-brands fa-js"></i>
+          </div>
+          <h3 class="skill-name">JavaScript</h3>
+          <p class="skill-desc">Dynamic & interactive web pages</p>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 75%; background:#F9A825;"></div>
+          </div>
+        </div>
+
+        <!-- Skill Card: Python -->
+        <div class="skill-card card">
+          <div class="skill-icon" style="background:#E8F5E9; color:#2E7D32;">
+            <i class="fa-brands fa-python"></i>
+          </div>
+          <h3 class="skill-name">Python</h3>
+          <p class="skill-desc">Scripting & backend basics</p>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 70%; background:#2E7D32;"></div>
+          </div>
+        </div>
+
+        <!-- Skill Card: MySQL -->
+        <div class="skill-card card">
+          <div class="skill-icon" style="background:#F3E5F5; color:#6A1B9A;">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <h3 class="skill-name">MySQL</h3>
+          <p class="skill-desc">Database design & queries</p>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 65%; background:#6A1B9A;"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS SECTION ===================== -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+      <p class="section-subtitle">Things I've built so far</p>
+
+      <div class="projects-grid">
+
+        <!-- ── Project 1: Portfolio Website ── -->
+        <div class="project-card card">
+          <div class="project-img-wrap">
+            <div class="project-img project-img-1"></div>
+            <div class="project-number">01</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-desc">
+              A clean, responsive personal portfolio to showcase skills,
+              projects, and contact info. Built with attention to layout
+              and great user experience.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <!-- View Project button triggers the modal -->  
+          </div>
+        </div>
+
+        <!-- ── Project 2: To-Do App ── -->
+        <div class="project-card card">
+          <div class="project-img-wrap">
+            <div class="project-img project-img-2"></div>
+            <div class="project-number">02</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">To-Do List Web App</h3>
+            <p class="project-desc">
+              A task management app where users can add, complete, and
+              delete tasks. Includes local storage so tasks persist even
+              after refreshing the browser.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Project 3: Weather App ── -->
+        <div class="project-card card">
+          <div class="project-img-wrap">
+            <div class="project-img project-img-3"></div>
+            <div class="project-number">03</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Weather App</h3>
+            <p class="project-desc">
+              Fetches real-time weather data via the OpenWeatherMap API.
+              Search any city and instantly see temperature, humidity,
+              wind speed, and sky conditions.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">REST API</span>
+            </div>
+           
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+      <p class="section-subtitle">Let's connect and work together!</p>
+
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Contact Details</h3>
+
+         <div class="contact-item">
+  <div class="contact-icon">
+    <i class="fa-solid fa-envelope"></i>
+  </div>
+
+  <div>
+    <p class="contact-label">Email</p>
+    <a href="mailto:snehapatil39842@gmail.com">
+      snehapatil39842@gmail.com
+    </a>
+  </div>
+</div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+            <div>
+              <p class="contact-label">LinkedIn</p>
+              <a href="https://linkedin.com/in/snehapatil" target="_blank">https://www.linkedin.com/in/sneha-patil-7b9a27370/</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+            <div>
+              <p class="contact-label">GitHub</p>
+              <a href="https://github.com/snehapatil" target="_blank">github.com/snehapatil3984</a>
+            </div>
+          </div>
+
+          <!-- Social icons row -->
+          <div class="social-row">
+            <a href="#" class="social-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="social-icon" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-icon" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form card">
+          <h3>Send a Message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="e.g. Rahul Sharma" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" placeholder="e.g. rahul@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+            <!-- Success message (hidden by default) -->
+            <div id="form-success" class="form-success hidden">
+              ✅ Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+ <footer class="footer">
+  <div class="footer-container">
+
+    <p class="footer-copy">© 2026 Sneha Patil. All Rights Reserved.</p>
+
+    <div class="footer-socials">
+      <a href="https://github.com/" target="_blank" title="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+      <a href="https://linkedin.com/" target="_blank" title="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+
+      <a href="mailto:snehapatil39842@gmail.com" title="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+
+    <p class="footer-made">
+      Designed & Developed by <strong>Sneha Patil</strong> | Web Developer Intern
+    </p>
+
+  </div>
+</footer>
+
+<!-- Back to top button -->
+<button class="back-to-top" id="backToTop" title="Back to top">
+  ↑
+</button>
