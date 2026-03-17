@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GreenLeaf - Fresh & Organic</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">🌿 GreenLeaf</div>
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Fresh & Organic Products</h1>
+    <p>Healthy food delivered straight to your door. 100% natural, 100% good.</p>
+    <button onclick="handleShopNow()">Shop Now</button>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section class="features" id="features">
+    <h2>Why Choose Us?</h2>
+    <div class="feature-boxes">
+      <div class="box">
+        <div class="icon">🥦</div>
+        <h3>Fresh Products</h3>
+        <p>All products are freshly picked and delivered quickly to your home.</p>
+      </div>
+      <div class="box">
+        <div class="icon">🚚</div>
+        <h3>Fast Delivery</h3>
+        <p>We deliver to your door within 24 hours of placing your order.</p>
+      </div>
+      <div class="box">
+        <div class="icon">💰</div>
+        <h3>Best Prices</h3>
+        <p>Organic and healthy food that fits easily within your budget.</p>
+      </div>
+      <div class="box">
+        <div class="icon">🌍</div>
+        <h3>Eco Friendly</h3>
+        <p>We use biodegradable packaging to help protect our planet.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <img src="https://images.unsplash.com/photo-1506484381205-f7945653044d?w=600&q=80" alt="Fresh vegetables" />
+    <div class="about-text">
+      <h2>About GreenLeaf</h2>
+      <p>GreenLeaf was started in 2020 by a group of friends who wanted to make healthy eating simple and affordable for everyone.</p>
+      <p>We work directly with local farmers to bring you the freshest organic produce without any harmful chemicals or additives.</p>
+      <button onclick="handleLearnMore()">Learn More</button>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="nameInput" placeholder="Your Name" />
+      <input type="email" id="emailInput" placeholder="Your Email" />
+      <textarea id="messageInput" placeholder="Your Message"></textarea>
+      <button type="button" onclick="handleFormSubmit()">Send Message</button>
+    </form>
+    <p id="successMsg"></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 GreenLeaf. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
