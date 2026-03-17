@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Page label above calculator */
+.label {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #555;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+/* ─── OUTER SHELL ─────────────────────────── */
+.calculator-shell {
+  background-color: #dcdcdc;
+  border: 3px solid #aaa;
+  border-radius: 16px;
+  padding: 18px 18px 22px 18px;
+  box-shadow:
+    4px 4px 0px #aaa,
+    8px 8px 0px #bbb,
+    0 20px 40px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+/* ─── BRAND STRIP ─────────────────────────── */
+.brand-strip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 0 4px;
+}
+
+.brand-name {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #444;
+  text-transform: uppercase;
+}
+
+.model-dots {
+  display: flex;
+  gap: 4px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #999;
+  border: 1px solid #777;
+}
+
+/* ─── DISPLAY ─────────────────────────────── */
+.display-wrapper {
+  background-color: #111;
+  border-radius: 8px;
+  border: 3px solid #555;
+  padding: 4px;
+  margin-bottom: 16px;
+  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+.display-inner {
+  background-color: #1a1a1a;
+  border-radius: 5px;
+  padding: 12px 14px 10px;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.expression-line {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 12px;
+  color: #666;
+  text-align: right;
+  min-height: 16px;
+  letter-spacing: 1px;
+}
+
+.main-display {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 34px;
+  color: #ffffff;
+  text-align: right;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  word-break: break-all;
+}
+
+/* ─── BUTTON GRID ─────────────────────────── */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+/* Base button style */
+button {
+  font-family: 'Nunito', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 14px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.07s, box-shadow 0.07s;
+}
+
+/* Press down effect */
+button:active {
+  transform: translateY(2px);
+  box-shadow: none !important;
+}
+
+/* Number buttons — light gray */
+button.num {
+  background-color: #f5f5f5;
+  color: #111;
+  border: 2px solid #bbb;
+  box-shadow: 0 4px 0 #999;
+}
+
+button.num:hover {
+  background-color: #ffffff;
+}
+
+/* Operator buttons — dark */
+button.op {
+  background-color: #222;
+  color: #fff;
+  border: 2px solid #000;
+  box-shadow: 0 4px 0 #000;
+}
+
+button.op:hover {
+  background-color: #333;
+}
+
+/* Utility buttons — mid gray */
+button.util {
+  background-color: #c8c8c8;
+  color: #111;
+  border: 2px solid #999;
+  box-shadow: 0 4px 0 #888;
+}
+
+button.util:hover {
+  background-color: #d8d8d8;
+}
+
+/* Equals button */
+button.equals {
+  background-color: #111;
+  color: #fff;
+  border: 2px solid #000;
+  box-shadow: 0 4px 0 #000;
+  font-size: 22px;
+}
+
+button.equals:hover {
+  background-color: #333;
+}
+
+/* Zero button spans 2 columns */
+button.span-two {
+  grid-column: span 2;
+}
+
+/* ─── SERIAL LABEL ────────────────────────── */
+.serial {
+  text-align: center;
+  margin-top: 14px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #888;
+}
